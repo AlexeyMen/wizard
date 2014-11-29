@@ -27,6 +27,40 @@
 	margin: 0 8px 0 0;
 }
 
+.wizard > .content {
+	background-color: transparent;
+}
+
+.cr-wizard-step-01 {
+	background-image: url('../img/step-01.png');
+	width: 100%;
+	height: 100%;
+}
+
+.cr-wizard-step-02 {
+	background-image: url('../img/step-02.png');
+	width: 100%;
+	height: 100%;
+}
+
+.cr-wizard-step-03 {
+	background-image: url('../img/step-03.png');
+	width: 100%;
+	height: 100%;
+}
+
+.wizard > .content > .body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.wizard > .actions {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+}
+
 .wizard > .steps a, 
 .wizard > .steps a:hover, 
 .wizard > .steps a:active, 
@@ -67,36 +101,40 @@
 	background-position: -1038px 0;
 }
 
-.wizard > .content {
-	background-color: transparent;
+.wizard > .steps .current:nth-child(2) a, 
+.wizard > .steps .current:nth-child(2) a:hover, 
+.wizard > .steps .current:nth-child(2) a:active { 
+	background-position: -346px -74px;
 }
 
-.cr-wizard-step-01 {
-	background-image: url('../img/step-01.png');
-	width: 100%;
-	height: 100%;
+.wizard > .steps .disabled:nth-child(2) a, 
+.wizard > .steps .disabled:nth-child(2) a:hover, 
+.wizard > .steps .disabled:nth-child(2) a:active {
+	background-position: -692px -74px;
+	color: #00c3ad;
+}	
+
+.wizard > .steps .done:nth-child(2) a, 
+.wizard > .steps .done:nth-child(2) a:hover, 
+.wizard > .steps .done:nth-child(2) a:active {
+	background-position: -1038px -74px;
 }
 
-.cr-wizard-step-02 {
-	background-image: url('../img/step-02.png');
-	width: 100%;
-	height: 100%;
+.wizard > .steps .current:nth-child(3) a, 
+.wizard > .steps .current:nth-child(3) a:hover, 
+.wizard > .steps .current:nth-child(3) a:active { 
+	background-position: -346px -148px;
 }
 
-.cr-wizard-step-03 {
-	background-image: url('../img/step-03.png');
-	width: 100%;
-	height: 100%;
-}
+.wizard > .steps .disabled:nth-child(3) a, 
+.wizard > .steps .disabled:nth-child(3) a:hover, 
+.wizard > .steps .disabled:nth-child(3) a:active {
+	background-position: -692px -148px;
+	color: #00c3ad;
+}	
 
-.wizard > .content > .body {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
-
-.wizard > .actions {
-	position: absolute;
-	bottom: 24px;
-	right: 24px;
+.wizard > .steps .done:nth-child(3) a, 
+.wizard > .steps .done:nth-child(3) a:hover, 
+.wizard > .steps .done:nth-child(3) a:active {
+	background-position: -1038px -148px;
 }
